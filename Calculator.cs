@@ -3,25 +3,8 @@ using System.Collections.Generic;
 
 namespace SimpluCalculator
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            
-            Console.WriteLine("how many input :  ");
-            var test = Console.ReadLine();
-            if(int.TryParse(test,out int number))
-            {
-                Calculator x = new Calculator();
-                    x.start(number);
-            }
-            else
-            {
-                Console.WriteLine($"{test} is not a number ");
-            }
-        }
-    }
-    class Calculator
+    class Calculator   
+
     {
         private List<float> lista = new List<float>();
         
